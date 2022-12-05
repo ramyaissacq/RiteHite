@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Prompt-Regular.ttf">
+            <string>Prompt-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayerCollectionViewCell" customModule="Scoreo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="53" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgd-gs-huM" userLabel="GoalKeeperView">
+                        <rect key="frame" x="0.0" y="0.0" width="53" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-0U-J4U">
+                                <rect key="frame" x="6.5" y="9.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7lv-gt-5d6"/>
+                                    <constraint firstAttribute="width" constant="40" id="kYz-Gj-Fur"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="redNew"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dwayne" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agD-9V-wSt">
+                                <rect key="frame" x="0.0" y="49.5" width="53" height="10.5"/>
+                                <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="agD-9V-wSt" firstAttribute="leading" secondItem="Fgd-gs-huM" secondAttribute="leading" id="2P2-49-LcS"/>
+                            <constraint firstAttribute="bottom" secondItem="agD-9V-wSt" secondAttribute="bottom" id="62V-qv-mJS"/>
+                            <constraint firstItem="eoP-0U-J4U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Fgd-gs-huM" secondAttribute="top" id="ANj-F0-2ur"/>
+                            <constraint firstItem="eoP-0U-J4U" firstAttribute="centerX" secondItem="Fgd-gs-huM" secondAttribute="centerX" id="Ukg-SQ-s2z"/>
+                            <constraint firstItem="agD-9V-wSt" firstAttribute="top" secondItem="eoP-0U-J4U" secondAttribute="bottom" id="ahQ-cP-9JI"/>
+                            <constraint firstAttribute="trailing" secondItem="agD-9V-wSt" secondAttribute="trailing" id="gI1-o3-bic"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Fgd-gs-huM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8f2-5z-XBn"/>
+                <constraint firstAttribute="trailing" secondItem="Fgd-gs-huM" secondAttribute="trailing" id="eQM-oY-Imj"/>
+                <constraint firstAttribute="bottom" secondItem="Fgd-gs-huM" secondAttribute="bottom" id="ihG-52-TyZ"/>
+                <constraint firstItem="Fgd-gs-huM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xWE-WA-JG4"/>
+            </constraints>
+            <size key="customSize" width="53" height="60"/>
+            <connections>
+                <outlet property="imgPlayer" destination="eoP-0U-J4U" id="r60-5P-MCg"/>
+                <outlet property="lblName" destination="agD-9V-wSt" id="eid-If-WP7"/>
+            </connections>
+            <point key="canvasLocation" x="235.50724637681162" y="68.973214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Player" width="48" height="48"/>
+        <namedColor name="redNew">
+            <color red="0.8784313725490196" green="0.14117647058823529" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

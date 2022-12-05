@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Prompt-Medium.ttf">
+            <string>Prompt-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmptyLiveCollectionViewCell" customModule="Scoreo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-nb-7nG">
+                        <rect key="frame" x="0.0" y="0.0" width="223" height="102"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJG-tT-zKs">
+                                <rect key="frame" x="8" y="33" width="207" height="36.5"/>
+                                <string key="text">There is no match
+ happening now</string>
+                                <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="12"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="backColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NJG-tT-zKs" secondAttribute="trailing" constant="8" id="LrK-u9-A5h"/>
+                            <constraint firstItem="NJG-tT-zKs" firstAttribute="centerY" secondItem="SwG-nb-7nG" secondAttribute="centerY" id="k23-iY-dRq"/>
+                            <constraint firstItem="NJG-tT-zKs" firstAttribute="leading" secondItem="SwG-nb-7nG" secondAttribute="leading" constant="8" id="lxZ-ez-wSL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SwG-nb-7nG" secondAttribute="trailing" id="1Yj-uV-6R0"/>
+                <constraint firstItem="SwG-nb-7nG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4MG-wm-txC"/>
+                <constraint firstItem="SwG-nb-7nG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ahE-ow-9ia"/>
+                <constraint firstAttribute="bottom" secondItem="SwG-nb-7nG" secondAttribute="bottom" id="k6a-R3-jMG"/>
+            </constraints>
+            <size key="customSize" width="223" height="102"/>
+            <connections>
+                <outlet property="backView" destination="SwG-nb-7nG" id="UJp-Fe-kq6"/>
+                <outlet property="lblTitle" destination="NJG-tT-zKs" id="DAU-8m-Ivz"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backColor">
+            <color red="0.16862745098039217" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

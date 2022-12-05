@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoaderCollectionViewCell" customModule="Scoreo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSv-tY-VkM">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="106"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xCK-DC-3yB">
+                                <rect key="frame" x="107" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="7gD-zj-ZGW"/>
+                                    <constraint firstAttribute="height" constant="20" id="7zb-81-bH8"/>
+                                </constraints>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xCK-DC-3yB" firstAttribute="centerX" secondItem="tSv-tY-VkM" secondAttribute="centerX" id="4be-Ju-SGf"/>
+                            <constraint firstItem="xCK-DC-3yB" firstAttribute="top" secondItem="tSv-tY-VkM" secondAttribute="top" constant="10" id="LzC-48-Qoa"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xCK-DC-3yB" secondAttribute="bottom" constant="10" id="Q0c-0W-kgN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tSv-tY-VkM" secondAttribute="trailing" id="6Mq-Lj-eRZ"/>
+                <constraint firstItem="tSv-tY-VkM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tOv-CD-GQq"/>
+                <constraint firstItem="tSv-tY-VkM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xdL-EX-EvY"/>
+                <constraint firstAttribute="bottom" secondItem="tSv-tY-VkM" secondAttribute="bottom" id="zTc-Mo-0wZ"/>
+            </constraints>
+            <size key="customSize" width="234" height="106"/>
+            <connections>
+                <outlet property="activity" destination="xCK-DC-3yB" id="h67-V0-8dZ"/>
+            </connections>
+            <point key="canvasLocation" x="265.21739130434787" y="117.1875"/>
+        </collectionViewCell>
+    </objects>
+</document>

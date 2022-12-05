@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Semibold.ttf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KickOffSelectionCollectionViewCell" customModule="Scoreo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-8F-C8G">
+                        <rect key="frame" x="0.0" y="0.0" width="254" height="92"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYU-Ff-9wd">
+                                <rect key="frame" x="112" y="10" width="30.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-iW-veX">
+                                <rect key="frame" x="0.0" y="37.5" width="254" height="2"/>
+                                <color key="backgroundColor" name="gradient1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="336-1j-j5A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xKT-iW-veX" secondAttribute="trailing" id="2OL-W9-os5"/>
+                            <constraint firstItem="QYU-Ff-9wd" firstAttribute="centerX" secondItem="JFT-8F-C8G" secondAttribute="centerX" id="9xm-rg-ahk"/>
+                            <constraint firstItem="QYU-Ff-9wd" firstAttribute="top" secondItem="JFT-8F-C8G" secondAttribute="top" constant="10" id="DQ9-wa-TAN"/>
+                            <constraint firstItem="xKT-iW-veX" firstAttribute="top" secondItem="QYU-Ff-9wd" secondAttribute="bottom" constant="8" id="KL2-Tv-J3k"/>
+                            <constraint firstItem="QYU-Ff-9wd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JFT-8F-C8G" secondAttribute="leading" constant="8" id="TqK-ZG-S5y"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QYU-Ff-9wd" secondAttribute="trailing" constant="8" id="i44-jV-3hl"/>
+                            <constraint firstItem="xKT-iW-veX" firstAttribute="leading" secondItem="JFT-8F-C8G" secondAttribute="leading" id="k0P-de-Hjy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JFT-8F-C8G" secondAttribute="bottom" id="B1s-IV-a2w"/>
+                <constraint firstItem="JFT-8F-C8G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EXq-ft-q5S"/>
+                <constraint firstAttribute="trailing" secondItem="JFT-8F-C8G" secondAttribute="trailing" id="bJU-m6-EwT"/>
+                <constraint firstItem="JFT-8F-C8G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kBF-6a-bgb"/>
+            </constraints>
+            <size key="customSize" width="254" height="92"/>
+            <connections>
+                <outlet property="lblTitle" destination="QYU-Ff-9wd" id="hXL-Eh-xZe"/>
+                <outlet property="underLine" destination="xKT-iW-veX" id="jZj-dZ-5gQ"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="gradient1">
+            <color red="1" green="0.082352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
