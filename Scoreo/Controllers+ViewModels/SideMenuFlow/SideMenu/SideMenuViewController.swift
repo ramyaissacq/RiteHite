@@ -31,7 +31,7 @@ class SideMenuViewController:BaseViewController{
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["remakereduce@gmail.com"])
+            mail.setToRecipients(["bequick.dev@gmail.com"])
             //mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 
             present(mail, animated: true)
@@ -66,16 +66,16 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             openVC(storyBoard: "SideMenu", identifier: "LanguageViewController")
         case 1:
             
-            Utility.openUrl(url: URL(string: "https://flysports3.wordpress.com/")!)
+            Utility.openUrl(url: URL(string: "https://ritehite.wordpress.com/privacy-policy/")!)
             //ScorePro
         case 2:
-            Utility.shareAction(text: "Install Fly Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
+            Utility.shareAction(text: "Install Rite-Hite from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
             
         case 3:
             sendEmail()
             
         case 4:
-            Utility.rateApp(id: "6444735888")
+            Utility.rateApp(id: "6444954162")
             
             
         default:

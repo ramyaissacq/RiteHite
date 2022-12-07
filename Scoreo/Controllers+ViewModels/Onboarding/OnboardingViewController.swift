@@ -10,9 +10,9 @@ import UIKit
 class OnboardingViewController: UIViewController {
     
     var current = 0
-    var titles = ["Welcome to Fly Sports".localized,"Lineups".localized,"Player Info".localized]
+    var titles = ["Welcome to Rite-Hite".localized,"Lineups".localized,"Player Info".localized]
     
-    var descriptions = ["Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Fly Sports and don’t miss a beat all day every day ".localized,"Is your favourite team taking to the field today? Check out their lineup and how they stack against the opponents! For every sport, we’ll have the lineups ready for your viewing pleasure the moment they’re announced, all without delay.".localized,"Lineups are nothing but meaningless stats without player info! You’ll get player details on the press of a button, their stats, their best performance, greatest triumphs and lowest points, as well as how they fit into the squad.".localized]
+    var descriptions = ["Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Rite-Hite and don’t miss a beat all day every day ".localized,"Is your favourite team taking to the field today? Check out their lineup and how they stack against the opponents! For every sport, we’ll have the lineups ready for your viewing pleasure the moment they’re announced, all without delay.".localized,"Lineups are nothing but meaningless stats without player info! You’ll get player details on the press of a button, their stats, their best performance, greatest triumphs and lowest points, as well as how they fit into the squad.".localized]
     
     @IBOutlet weak var collectionView: UICollectionView!
     
